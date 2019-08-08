@@ -121,7 +121,7 @@ def Send_Email(sender, recipients, attachments):
     send_server.ehlo()
     send_server.starttls()
     send_server.ehlo
-    send_server.login('thefortressraspberrypi@gmail.com', '1025CrossCountry')
+    #send_server.login('thefortressraspberrypi@gmail.com', '')
     #send_server = smtplib.SMTP('localhost')
     send_server.sendmail('thefortressraspberrypi@gmail.com', recipients, msg.as_string())
     send_server.close()
